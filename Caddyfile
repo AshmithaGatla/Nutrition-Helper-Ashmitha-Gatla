@@ -1,0 +1,13 @@
+:8080
+
+handle /api/* {
+    reverse_proxy localhost:8778
+}
+
+handle /metrics {
+    reverse_proxy localhost:8778
+}
+
+handle {
+    reverse_proxy localhost:3000
+}
