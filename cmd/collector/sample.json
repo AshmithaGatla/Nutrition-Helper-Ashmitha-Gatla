@@ -1,0 +1,166 @@
+{
+  "recipe-34215": {
+    "type": "food",
+    "name": "Chicken &amp; Biscuits Casserole",
+    "slug": "wprm-chicken-biscuits-casserole",
+    "image_url": "https:\/\/emilybites.com\/wp-content\/uploads\/2010\/12\/Chicken-2526-Biscuit-Casserole-serving.jpg",
+    "rating": {
+      "count": 0,
+      "total": 0,
+      "average": 0,
+      "type": {
+        "comment": 0,
+        "no_comment": 0,
+        "user": 0
+      },
+      "user": 0
+    },
+    "ingredients": [
+      {
+        "uid": 0,
+        "amount": "1",
+        "unit": "",
+        "name": "can Campbell\u2019s 98% Fat Free Cream of Chicken Soup",
+        "notes": "",
+        "id": 2735,
+        "type": "ingredient",
+        "unit_systems": {
+          "unit-system-1": {
+            "amount": "1",
+            "unit": "",
+            "unitParsed": ""
+          }
+        }
+      },
+      {
+        "uid": 1,
+        "amount": "3\/4",
+        "unit": "cup",
+        "name": "fat free sour cream",
+        "notes": "divided",
+        "unit_id": 2341,
+        "id": 265,
+        "type": "ingredient",
+        "unit_systems": {
+          "unit-system-1": {
+            "amount": "3\/4",
+            "unit": "cup",
+            "unitParsed": "cup"
+          }
+        }
+      },
+      {
+        "uid": 2,
+        "amount": "2",
+        "unit": "cups",
+        "name": "cooked chopped chicken",
+        "notes": "",
+        "unit_id": 2347,
+        "id": 3468,
+        "type": "ingredient",
+        "unit_systems": {
+          "unit-system-1": {
+            "amount": "2",
+            "unit": "cups",
+            "unitParsed": "cups"
+          }
+        }
+      },
+      {
+        "uid": 3,
+        "amount": "1",
+        "unit": "(16 oz)",
+        "name": "pkg frozen mixed vegetables",
+        "notes": "",
+        "unit_id": 3483,
+        "id": 3484,
+        "type": "ingredient",
+        "unit_systems": {
+          "unit-system-1": {
+            "amount": "1",
+            "unit": "(16 oz)",
+            "unitParsed": "(16 oz)"
+          }
+        }
+      },
+      {
+        "uid": 4,
+        "amount": "1",
+        "unit": "cup",
+        "name": "reduced fat shredded cheddar cheese",
+        "notes": "",
+        "unit_id": 2341,
+        "id": 3470,
+        "type": "ingredient",
+        "unit_systems": {
+          "unit-system-1": {
+            "amount": "1",
+            "unit": "cup",
+            "unitParsed": "cup"
+          }
+        }
+      },
+      {
+        "uid": 5,
+        "amount": "1",
+        "unit": "cup",
+        "name": "Bisquick Heart Smart baking mix",
+        "notes": "",
+        "unit_id": 2341,
+        "id": 770,
+        "type": "ingredient",
+        "unit_systems": {
+          "unit-system-1": {
+            "amount": "1",
+            "unit": "cup",
+            "unitParsed": "cup"
+          }
+        }
+      },
+      {
+        "uid": 6,
+        "amount": "3",
+        "unit": "tablespoons",
+        "name": "skim milk",
+        "notes": "",
+        "unit_id": 2342,
+        "id": 430,
+        "type": "ingredient",
+        "unit_systems": {
+          "unit-system-1": {
+            "amount": "3",
+            "unit": "tablespoons",
+            "unitParsed": "tablespoons"
+          }
+        }
+      }
+    ],
+    "originalServings": "6",
+    "originalServingsParsed": 6,
+    "currentServings": "6",
+    "currentServingsParsed": 6,
+    "currentServingsFormatted": "6",
+    "currentServingsMultiplier": 1,
+    "originalSystem": 1,
+    "currentSystem": 1,
+    "unitSystems": [
+      1
+    ],
+    "originalAdvancedServings": {
+      "shape": "round",
+      "unit": "inch",
+      "diameter": 0,
+      "width": 0,
+      "length": 0,
+      "height": 0
+    },
+    "currentAdvancedServings": {
+      "shape": "round",
+      "unit": "inch",
+      "diameter": 0,
+      "width": 0,
+      "length": 0,
+      "height": 0
+    }
+  }
+}
