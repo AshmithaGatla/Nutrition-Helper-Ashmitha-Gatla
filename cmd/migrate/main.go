@@ -1,0 +1,51 @@
+package main
+
+import (
+	"errors"
+	"github.com/coloradocollective/go-capstone-starter/pkg/dbsupport"
+	"github.com/coloradocollective/go-capstone-starter/pkg/websupport"
+	"github.com/golang-migrate/migrate/v4"
+	"github.com/golang-migrate/migrate/v4/database/pgx/v5"
+	_ "github.com/golang-migrate/migrate/v4/database/postgres"
+	_ "github.com/golang-migrate/migrate/v4/source/file"
+	"log"
+)
+
+func main() {
+	databaseUrl := websupport.RequireEnvironmentVariable[string]("DATABASE_URL")
+	migrationsLocation := websupport.EnvironmentVariable("MIGRATIONS_LOCATION", "file://./databases/starter")
+
+	migration := createMigration(databaseUrl, migrationsLocation)
+	err := migration.Up()
+	if errors.Is(err, migrate.ErrNoChange) {
+		log.Printf("no new migrations detected: %s\n", err)
+	} else if err != nil {
+		log.Fatalf("unable to migrate %s, %s", databaseUrl, err)
+	}
+
+	log.Printf("successfully migrated %s\n", databaseUrl)
+}
+
+func createMigration(databaseUrl, migrationsLocation string) *migrate.Migrate {
+	db := dbsupport.CreateConnection(databaseUrl)
+	driver, err := pgx.WithInstance(db, &pgx.Config{})
+	if err != nil {
+		log.Fatalf("failed to connect to %s, %s", databaseUrl, err)
+	}
+
+	migration, err := migrate.NewWithDatabaseInstance(migrationsLocation, "capstone-starter", driver)
+	if err != nil {
+		log.Fatalf("failed to create migration instance %s, %s", databaseUrl, err)
+	}
+
+	migration.Log = logger{}
+	return migration
+}
+
+type logger struct{}
+
+func (l logger) Verbose() bool { return true }
+
+func (l logger) Printf(format string, v ...interface{}) {
+	log.Printf(format, v...)
+}
