@@ -1,13 +1,12 @@
-# 🍽️ Nutrition Helper – Capstone Project (Team 3)
+# 🍽️ Nutrition Helper 
 
 A web-based nutrition tracking system designed to help users log food entries, monitor nutritional intake, and receive personalized suggestions using third-party APIs. Built with a focus on modularity, scalability, and test-driven development.
 
 ---
 
-## Project Overview (Rubric)
+## Project Overview 
 
 - **Web Application:**  
-  [`https://s25-team-3-capstone-450859268851.us-central1.run.app/`](https://s25-team-3-capstone-450859268851.us-central1.run.app/)
     - Basic form and reporting interface implemented using React and Go.
 
 - **Data Collection:**
@@ -28,7 +27,6 @@ A web-based nutrition tracking system designed to help users log food entries, m
 
 - **Product Environment:**
     - Managed using GitHub Projects for sprint planning, issue tracking, and task assignment.
-    - Deployment URL: [`https://s25-team-3-capstone-450859268851.us-central1.run.app/`](https://s25-team-3-capstone-450859268851.us-central1.run.app/)
 
 - **Integration Tests:**
     - Located in `internal/integrationtests`
@@ -41,8 +39,7 @@ A web-based nutrition tracking system designed to help users log food entries, m
     - Auto-run test suite on every push to `main`
 
 - **Production Monitoring & Instrumentation:**
-    - Exposed Prometheus metrics endpoint at:  
-      [`/metrics`](https://s25-team-3-capstone-450859268851.us-central1.run.app/metrics)
+    - Exposed Prometheus metrics endpoint 
   - Integrated with **GCP Cloud Monitoring → Metrics Explorer**
       - Observability for response time, error rates, and uptime
 
@@ -66,9 +63,6 @@ A web-based nutrition tracking system designed to help users log food entries, m
 
 ---
 
-# Capstone Starter
-
-A capstone starter application.
 
 ## Technology stack
 
