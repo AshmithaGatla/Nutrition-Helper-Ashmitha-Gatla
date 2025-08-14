@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lekton:ital,wght@0,400;0,700;1,400&family=Poppins:ital,wght@0,400;0,700;1,400&display=swap');
+
+.brand-title {
+    font-family: 'Lekton', sans-serif;
+    font-weight: bold;
+}
+
+.custom-navbar {
+    background-color: #fff;
+    transition: top 0.3s ease, opacity 0.3s ease;
+    border-bottom: 1px solid #ddd;
+    z-index: 1000;
+}
+
+.custom-navbar.hide {
+    top: -70px;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.custom-navbar.show {
+    top: 0;
+    opacity: 1;
+    visibility: visible;
+}
+
+.nav-bar .nav-link,
+.nav-bar .dropdown-item {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    color: #333 !important;
+    margin-right: 10px;
+    transition: color 0.2s ease;
+}
+
+.nav-bar .nav-link:hover,
+.nav-bar .dropdown-item:hover {
+    color: #ff4b2b !important;
+}
+
+.navbar-brand i {
+    margin-right: 8px;
+    color: #ff4b2b;
+}
+
+@media (max-width: 768px) {
+    .nav-bar .nav-link {
+        font-size: 14px;
+        margin-right: 8px;
+    }
+
+    .navbar-collapse {
+        background-color: #fff;
+        padding: 1rem;
+    }
+
+    .navbar-nav {
+        flex-direction: column;
+    }
+}
