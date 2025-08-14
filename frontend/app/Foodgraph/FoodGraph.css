@@ -1,0 +1,106 @@
+/* Make the body and html take full height */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Main container style to fill the entire screen */
+  .main-container {
+    flex-grow: 1; /* This makes the container take up available space */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  /* Container for the Food Line Graph */
+  .food-line-graph-container {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px; /* Prevent any content from touching the bottom */
+  }
+
+  /* Title style */
+  .graph-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+    margin-top: 60px;
+  }
+  
+  /* Responsive styling for graphs */
+  @media screen and (max-width: 768px) {
+    .food-line-graph-container {
+      height: 400px;
+      padding: 10px;
+    }
+  
+    .graph-title {
+      font-size: 20px;
+    }
+  }
+  
+  /* Make the chart area responsive */
+  .ResponsiveContainer {
+    width: 100%;
+    height: 100%;
+    min-height: 300px;
+  }
+  
+  /* Tooltip Style */
+  .recharts-tooltip-wrapper {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  /* Legend Styling */
+  .recharts-legend-wrapper {
+    font-size: 12px;
+    margin-top: 20px;
+  }
+  
+  /* Line styles */
+  .recharts-line {
+    stroke-width: 3px;
+  }
+  
+  /* Optional: Colors for each nutrient line */
+  .recharts-line[stroke="#ff7300"] {
+    stroke-dasharray: 5 5;
+  }
+  
+  .recharts-line[stroke="#387908"] {
+    stroke-dasharray: 5 5;
+  }
+  
+  .recharts-line[stroke="#8884d8"] {
+    stroke-dasharray: 5 5;
+  }
+  
+  .recharts-line[stroke="#0088FE"] {
+    stroke-dasharray: 5 5;
+  }
+  
+  .recharts-line[stroke="#00C49F"] {
+    stroke-dasharray: 5 5;
+  }
+  
+  .recharts-line[stroke="#FFBB28"] {
+    stroke-dasharray: 5 5;
+  }
+  
