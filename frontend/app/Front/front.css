@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lekton:ital,wght@0,400;0,700;1,400&family=Poppins:ital,wght@0,400;0,700;1,400&display=swap');
+
+.front-wrapper {
+    height: 100vh;
+    padding: 2rem;
+    background-color: #f9f9f9;
+}
+
+.front-content-wrapper {
+    display: grid;
+    grid-template-columns: 450px 1fr; /* Left column fixed width, right column flexible */
+    gap: 2rem;
+    height: 100%;
+    max-width: 1800px;
+    margin: 0 auto;
+}
+
+.left-column {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.right-column {
+    background: white;
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    height: fit-content;
+}
+
+.background-img {
+    grid-area: hero;
+    object-fit: cover;
+    width: 100%;
+    height: 50vh;
+    /* z-index: -1; */
+}
+
+.front-texts {
+    align-self: center;
+    justify-self: end;
+    width: 37vw;
+}
+
+.preview-img {
+    justify-self: center;
+    align-self: center;
+    border-radius: 1%;
+    height: 88vh;
+}
+
+.front-title {
+    background-image: linear-gradient(60deg, #C87C00, #8B3208, #53200F, #010420);
+    background-clip: text;
+    color: transparent;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+}
+
+.front-description {
+    color: #425466;
+}
+
+.stats-title {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 2rem;
+    margin-top: 40px;
+    padding-left: 1.5rem;
+}
+
+.stats-form {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    margin-bottom: 0; 
+}
+
+.food-search {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.nutrition-summary {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    margin-bottom: 2rem;
+}
+
+.summary-title {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 1.5rem;
+}
+
+.nutrient-bars {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.nutrient-bar {
+    padding: 1rem;
+    background: #f8f9fa;
+    border-radius: 8px;
+}
+
+.nutrient-bar.warning {
+    border: 2px solid #ff6b6b;
+    background: #fff5f5;
+}
+
+.nutrient-label {
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.progress {
+    height: 8px;
+    background: #e9ecef;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.progress-bar {
+    height: 100%;
+    background: #0066cc;
+    transition: width 0.3s ease;
+}
+
+.warning .progress-bar {
+    background: #ff6b6b;
+}
+
+.nutrient-values {
+    font-size: 0.9rem;
+    color: #666;
+    margin-top: 0.5rem;
+}
+
+.warning-text {
+    color: #ff6b6b;
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-top: 0.5rem;
+}
+
+.search-results {
+    max-height: 300px;
+    overflow-y: auto;
+    margin-top: 1rem;
+}
+
+.food-item {
+    padding: 0.5rem;
+    border-bottom: 1px solid #eee;
+}
+
+.food-item:last-child {
+    border-bottom: none;
+}
+
+.stats-form .form-label {
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 0.5rem;
+    font-size: 0.95rem;
+}
+
+.stats-form .form-control,
+.stats-form .form-select {
+    padding: 0.75rem;
+    border-color: #e0e0e0;
+}
+
+.stats-form .form-control:focus,
+.stats-form .form-select:focus {
+    border-color: #0066cc;
+    box-shadow: 0 0 0 0.2rem rgba(0, 102, 204, 0.25);
+}
